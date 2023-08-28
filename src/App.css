@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    box-sizing: border-box;
+    margin: 0%;
+    overflow-x: hidden;
+    font-family: 'Courgette', cursive;
+    /* background-color: pink; */
+    /* color: plum; */
+}
+
+::-webkit-scrollbar{
+    opacity: 0;
+    display: none;
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+}
+
+.one{
+    display: flex;
+    place-content: center;
+}
+
+.grid{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: plum; */
+}
+
+h1, h2{
+    font-family: 'Great Vibes', cursive;
+}
+
+.top-nav {
+    font-family: 'Great Vibes', cursive;
+    position: relative;
+    padding: 20px;
+    /* background-color: azure; */
+    /* width: 30vw; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    z-index: -1;
+
+}
+
+.span{
+    margin-right: 2vw;
+    width: 15vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    position: relative;
+    margin-top: -15vh;
+    display: grid;
+    place-content: center;
+    scale: 0.7;
+    display: none;
+}
+
+.hero-title {
+    width: 70vw;
+    height: 50vh;
+    display: grid;
+    place-content: center;
+    /* background-color: blue; */
+}
+
+.x{
+    position: absolute;
+    width: 70vw;
+    height: 50vh;
+}
+
+.hero-title img{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.hero-title h2{
+    position: relative;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    /* background-color: green; */
+
+}
+
+.grid2{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    place-content: center;
+    /* background-color: red; */
+    text-align: center;
+    margin-top: 0vh;
+}
+
+.scrolling-text{
+    text-align: center;
+    font-size: 100px;
+    width: 100%;
+    margin: 0vh;
+    /* background-color: aqua; */
+}
+
+.scroll-container {
+    /* background-color: pink; */
+    overflow: hidden; /* Hide overflow to create the scrolling effect */
+    white-space: nowrap; /* Prevent text from wrapping */
+    width: 60%; /* Set the width of the container */
+    height: 100%;
+    /* background-color: yellowgreen; */
+    background-size: cover;
+    background-position: center;
+    background-image: url(./assets/flowers-6798843_1280.png);
+    display: grid;
+    place-content: center;
+    
+}
+  
+  .scrolling-text {
+    animation: scrollLeft 10s linear infinite; /* Animation properties */
+    padding: 10px; /* Add some padding for better visual appearance */
+  }
+  
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(100%); /* Start from the right edge */
+    }
+    100% {
+      transform: translateX(-100%); /* End at the left edge */
+    }
+  }
+  
+.flowers {
+    /* width: 50vw; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}  
+
+.two{
+    background-color: rgb(248, 247, 247);
+    display: grid;
+    place-content: center;
+
+}
+
+.main{
+    width: 50vw;
+    height: 75vh;
+}
+
+.inner-main{
+    width: 53%;
+    height: 51%;
+    background-size: cover;
+    /* background-position: center; */
+    background-image: url(./assets/flowers-2.png);
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.inner-main p {
+    margin-top: -2vh;
+}
+
+.second{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+.three {
+    background-color: rgb(233, 230, 230);
+    display: flex;
+    justify-content: space-between;
+}
+
+.chapter-display{
+    width: 70vw;
+    height: 100vh;
+    /* background-color: #fff; */
+    text-align: center;
+    display: grid;
+    place-content: center;
+    font-size: x-large;
+}
+
+
+.chapter-toggle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chapter-toggle div{
+    width: 20vw;
+    height: 50px;
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    color: blue;
+
+}
+
+.chapter-toggle div span:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.chapter-nav{
+    width: 25vw;
+    height: 100vh;
+    background-color: #fff;
+    /* padding-top: 4vh; */
+}
+
+.chapter-nav h2{
+    width: 100%;
+    display: flex;
+    place-content: center;
+}
+
+.row{
+    width: 100%;
+    height: 32.33%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 1%; */
+}
+
+.page-f{
+    width: 100vw;
+    background-color: black;
+}
+
+.row div{
+    background-color: rgb(248, 247, 247);
+    width: 43%;
+    height: 70%;
+    /* background: #fff; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 15px;
+}
+
+.page-four{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: black; */
+}
+
+.page-four {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Adjust the number of columns as needed */
+    gap: 5px;
+    padding: 10px;
+}
+  
+.page-four img, .page-four video {
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+    /* background-color: red; */
+}
+
+.h1{
+    width: 100vw;
+    display: flex;
+    place-content: center;
+    font-size: 40px;
+
+}
+  
+ .selected {
+    transform: scale(3);
+    z-index: 2;
+}
+  
+.row div{
+    display: grid;
+    place-content: center;
+}  
+
+
+
+@media (max-width: 900px) {
+    .scroll-container{
+        width: 100%;
+    }
+
+    .main{
+        width: 95vw;
+        /* background-color: aquamarine; */
+    }
+
+    .inner-main {
+        height: 49%;
+        width: 75%;
+    }
+
+    .inner-main p{
+        margin-top: -7vh;
+        font-size: large;
+    }
+
+    .chapter-nav{
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 20vh;
+        /* border-bottom: solid black 1px; */
+    }
+
+    .chapter-display {
+       height: 80vh;
+       width: 100vw;
+       padding: 20px;
+    }
+
+    .row {
+        width: 33.33%;
+        height: 50%;
+        float: left;
+    }
+
+    .row div{
+        height: 100%;
+    }
+
+    .chapter-toggle div{
+        width: 35vw;
+        justify-content: space-around;
+    }
+
+    
+}
+
+@media (max-width: 400px) {
+    .span {
+        width: 40vw;
+    }
+
+    .inner-main p{
+        margin-top: -7vh;
+        font-size: medium;
+    }
+
+    .chapter-toggle div{
+        width: 50vw;
+        justify-content: space-around;
+    }
+
+    .chapter-nav{
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 20vh;
+        /* border-bottom: solid black 1px; */
+    }
+
+    .chapter-display {
+        font-size: medium;
+        padding: 20px;
+    }
+
+    .row {
+        width: 50%;
+        height: 50%;
+        float: left;
+        margin-bottom: 1vh;
+    }
+
+    .h1{
+        margin-top: 20vh;
+    }
+}

@@ -1,0 +1,27 @@
+*{
+    filter: grayscale(0);
+}
+
+.video-grid {
+    justify-content: center;
+    margin: 20px;
+    background-color: black;
+    /* width: 100vw; */
+}
+  
+.size {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(10% - 2px), 2fr));
+    grid-gap: 2px;
+    width: 100%;
+}
+  
+.size video {
+    width: 97%;
+    object-fit: cover;
+}
+
+.video-wrapper video:hover {
+    filter: grayscale(0);
+  }
+  
